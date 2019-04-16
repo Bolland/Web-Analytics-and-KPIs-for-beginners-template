@@ -157,12 +157,12 @@
          function processForm(e) {
             if (e.preventDefault) e.preventDefault();
 
-            const userType = e.target.elements.userType.value;
+            let userType = e.target.elements.userType.value;
             if (userType == "") {
                userType = "not set"
             }
 
-            const planType = e.target.elements.planType.value;
+            let planType = e.target.elements.planType.value;
             if (planType == "") {
                planType = "not set"
             }
